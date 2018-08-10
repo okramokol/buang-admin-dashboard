@@ -1,0 +1,27 @@
+/**
+    Helper css functions for better coding
+    @Will be converted into SCSS
+**/
+
+/*Font related*/
+.f-s-15 {
+    font-size: 15px !important;
+}
+
+.f-w-b {
+    font-weight: bold !important;
+}
+
+/*Margins*/
+.m-b-20 {
+    margin-bottom: 20px;
+}
+
+/*Paddings*/
+.p-l-25 {
+    padding-left: 50px !important;
+}
+
+.p-l-75 {
+    padding-left: 75px !important;
+}

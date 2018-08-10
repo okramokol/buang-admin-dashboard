@@ -23,9 +23,15 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "/var/www/html/template-ng-six/node_modules/bulma-start/css/main.css",
+              "/var/www/html/template-ng-six/src/assets/css/helper.css",
+              "node_modules/animate.css/animate.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "/var/www/html/template-ng-six/src/assets/js/all.js",
+              "node_modules/chart.js/dist/Chart.bundle.js"
+            ]
           },
           "configurations": {
             "production": {

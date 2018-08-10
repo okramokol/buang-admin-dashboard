@@ -1,0 +1,118 @@
+<nav class="sidebar b-s">
+  <div class="columns">
+    <div class="column is-12">
+      <div class="column is-12 bg-color-lavendar b-s">
+          <div class="media">
+              <div class="media-left">
+                <figure class="image is-64x64 rounded-img-container">
+                  <img class="rounded-img" src="assets/img/profile/me.jpg" alt="Image">
+                </figure>
+              </div>
+              <div class="media-content">
+                <p class="title" style="font-size: medium; color: white;">Welcome</p>
+                <p class="subtitle" style="font-size: small; color: white;">King <b>Caubalejo</b></p>
+              </div>
+            </div>
+      </div>
+      <aside class="menu">
+          <ul class="menu-list m-b-20">
+            <li>
+              <a class="f-s-15 f-w-b has-text-left" routerLink="/dashboard" routerLinkActive="router-link-active">
+                <span class="icon"><i class="fas fa-tachometer-alt"></i></span>Dashboard
+              </a>
+            </li>
+            <li>
+              <a class="f-s-15 f-w-b has-text-left" routerLink="/color" routerLinkActive="router-link-active">
+                <span class="icon"><i class="fas fa-paint-brush"></i></span>Colors
+              </a>
+          </li>
+            <li>
+              <a class="f-s-15 f-w-b has-text-left" routerLink="/generic-class" routerLinkActive="router-link-active">
+                <span class="icon"><i class="fas fa-clone"></i></span>Generic Classes
+              </a>
+            </li>
+
+            <!-- Layouts -->
+            <li>
+              <a class="f-s-15 f-w-b" (click)="addExpandClass('layouts')" routerLinkActive="router-link-active">
+                  <span class="icon"><i class="fas fa-columns"></i></span>Layouts
+              </a>
+              <ul id="layouts" class="slider closed">
+                <li><a class="f-s-15 p-l-25 has-text-left">Container</a></li>
+                <li><a class="f-s-15 p-l-25 has-text-left">Level</a></li>
+                <li><a class="f-s-15 p-l-25 has-text-left">Media Object</a></li>
+                <li><a class="f-s-15 p-l-25 has-text-left">Hero</a></li>
+                <li><a class="f-s-15 p-l-25 has-text-left">Section</a></li>
+                <li><a class="f-s-15 p-l-25 has-text-left">Footer</a></li>
+                <li><a class="f-s-15 p-l-25 has-text-left">Tiles</a></li>
+                <li>
+                    <a class="f-s-15 p-l-25 has-text-left" (click)="addExpandClass('columns')">Columns</a>
+                    <ul id="columns" class="slider closed">
+                      <li><a class="f-s-15 p-l-75 has-text-left">Basics</a></li>
+                      <li><a class="f-s-15 p-l-75 has-text-left">Responsiveness</a></li>
+                      <li><a class="f-s-15 p-l-75 has-text-left">Sizes</a></li>
+                      <li><a class="f-s-15 p-l-75 has-text-left">Nesting</a></li>
+                      <li><a class="f-s-15 p-l-75 has-text-left">Gap</a></li>
+                      <li><a class="f-s-15 p-l-75 has-text-left">Options</a></li>
+                    </ul>
+                  </li>
+              </ul>
+            </li>
+
+            <!-- Elements -->
+            <li>
+              <a class="f-s-15 f-w-b" (click)="addExpandClass('elements')">
+                <span class="icon"><i class="fa fa-tag"></i></span>Elements
+              </a>
+              <ul id="elements" class="slider closed">
+                <li><a class="f-s-15 p-l-25 has-text-left">Content</a></li>
+                <li><a class="f-s-15 p-l-25 has-text-left">Delete</a></li>
+                <li><a class="f-s-15 p-l-25 has-text-left">Icon</a></li>
+                <li><a class="f-s-15 p-l-25 has-text-left">Image</a></li>
+                <li><a class="f-s-15 p-l-25 has-text-left">Notification</a></li>
+                <li><a class="f-s-15 p-l-25 has-text-left">Progress Bars</a></li>
+                <li><a class="f-s-15 p-l-25 has-text-left">Table</a></li>
+                <li><a class="f-s-15 p-l-25 has-text-left">Tag</a></li>
+                <li><a class="f-s-15 p-l-25 has-text-left">Title</a></li>
+              </ul>
+            </li>
+
+            <!-- Forms -->
+            <li>
+              <a class="f-s-15 f-w-b" (click)="addExpandClass('forms')">
+                <span class="icon"><i class="fab fa-wpforms"></i></span>Forms
+              </a>
+              <ul id="forms" class="slider closed">
+                  <li><a class="f-s-15 p-l-25 has-text-left">General</a></li>
+                  <li><a class="f-s-15 p-l-25 has-text-left">Input</a></li>
+                  <li><a class="f-s-15 p-l-25 has-text-left">Textarea</a></li>
+                  <li><a class="f-s-15 p-l-25 has-text-left">Select</a></li>
+                  <li><a class="f-s-15 p-l-25 has-text-left">Checkbox</a></li>
+                  <li><a class="f-s-15 p-l-25 has-text-left">Radio</a></li>
+                  <li><a class="f-s-15 p-l-25 has-text-left">File</a></li>
+              </ul>
+            </li>
+
+            <!-- Components -->
+            <li>
+              <a class="f-s-15 f-w-b" (click)="addExpandClass('components')">
+                <span class="icon"><i class="fas fa-sitemap"></i></span>Components
+              </a>
+              <ul id="components" class="slider closed">
+                  <li><a class="f-s-15 p-l-25 has-text-left">Breadcrumb</a></li>
+                  <li><a class="f-s-15 p-l-25 has-text-left">Card</a></li>
+                  <li><a class="f-s-15 p-l-25 has-text-left">Dropdown</a></li>
+                  <li><a class="f-s-15 p-l-25 has-text-left">Menu</a></li>
+                  <li><a class="f-s-15 p-l-25 has-text-left">Message</a></li>
+                  <li><a class="f-s-15 p-l-25 has-text-left">Modal</a></li>
+                  <li><a class="f-s-15 p-l-25 has-text-left">Navbar</a></li>
+                  <li><a class="f-s-15 p-l-25 has-text-left">Pagination</a></li>
+                  <li><a class="f-s-15 p-l-25 has-text-left">Panel</a></li>
+                  <li><a class="f-s-15 p-l-25 has-text-left">Tabs</a></li>
+              </ul>
+            </li>
+          </ul>
+        </aside>
+    </div>
+  </div>
+</nav>

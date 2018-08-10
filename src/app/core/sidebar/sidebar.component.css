@@ -1,0 +1,71 @@
+.sidebar {
+    border-radius: 0;
+    position: fixed;
+    z-index: 1000;
+    top: 56px;
+    left: 235px;
+    width: 235px;
+    margin-left: -235px;
+    margin-bottom: 48px;
+    border: none;
+    border-radius: 0;
+    overflow-y: auto;
+    background-color: #0b212f;
+    bottom: 0;
+    overflow-x: hidden;
+    padding-bottom: 40px;
+    white-space: nowrap;
+    height: 100%;
+}
+
+.menu-list a:hover {
+    background-color: transparent !important;
+    color: whitesmoke !important;
+    font-weight: 400 !important;
+}
+
+.menu-list a {
+    color: whitesmoke !important;
+    border-radius: none !important;
+    font-weight: 300;
+    outline: none;
+}
+
+.menu-list li ul {
+    border-left: none !important;
+    margin: 0 !important;
+    padding-left: 0 !important;
+}
+
+.bg-color-lavendar {
+    background-color: #010812;
+}
+
+.rounded-img-container {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.rounded-img {
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+
+    object-fit: cover;
+    object-position: center;
+}
+  
+.slider {
+    overflow-y: hidden;
+}
+
+.slider.closed {
+	display: none;
+}
+
+a.router-link-active {
+    background: black;
+}
