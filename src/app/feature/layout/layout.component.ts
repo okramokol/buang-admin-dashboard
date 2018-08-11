@@ -12,11 +12,9 @@ export class LayoutComponent implements OnInit {
   constructor(private router: Router) { }
 
   ngOnInit() {
-    if(this.router.navigate.name === '') {
+    if(this.router.url === '/') {
       this.router.navigate(['/dashboard']);
-      console.log(this.router.navigate);
     }
-    
   }
 
 }

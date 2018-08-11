@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-generic-class',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GenericClassComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private route: ActivatedRoute) { }
+  dynamicNumber = Math.random();
   ngOnInit() {
+    this.route.params.subscribe(params => {
+      alert(params['id']);
+    });
   }
 
 }

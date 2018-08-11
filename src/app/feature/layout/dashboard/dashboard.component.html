@@ -92,7 +92,7 @@
         <div class="columns">
             <div class="column is-12">
                 <div style="display: block;">
-                  <canvas baseChart
+                  <!-- <canvas baseChart
                       [datasets]="lineChartData"
                       [labels]="lineChartLabels"
                       [options]="lineChartOptions"
@@ -101,6 +101,16 @@
                       [chartType]="lineChartType"
                       (chartHover)="chartHovered($event)"
                       (chartClick)="chartClicked($event)">
+                  </canvas> -->
+                  <canvas baseChart
+                    [datasets]="lineChartData"
+                    [labels]="lineChartLabels"
+                    [options]="lineChartOptions"
+                    [colors]="lineChartColors"
+                    [legend]="lineChartLegend"
+                    [chartType]="lineChartType"
+                    (chartHover)="chartHovered($event)"
+                    (chartClick)="chartClicked($event)">                  
                   </canvas>
                 </div>
             </div>
