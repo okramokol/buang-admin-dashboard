@@ -15,6 +15,7 @@ const routes: Routes = [
       { path: 'dashboard', loadChildren: './dashboard/dashboard.module#DashboardModule' },
       { path: 'color', loadChildren: './colors/colors.module#ColorsModule' },
       { path: 'generic-class/:id', loadChildren: './generic-class/generic-class.module#GenericClassModule' },
+      { path: 'forms', loadChildren: './forms/forms.module#FormsModule' },
     ]
   },
   { path: '**', redirectTo: '/' } // Redirect to not found module
